@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bussiness Point</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau SC', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #home {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(/images/pexels-pixabay-264507.jpg);
+    background-size: cover;
+
+
+
+  }
+
+  .navbar {
+    border-bottom: 1px solid black;
+  }
+
+  .nav-link {
+    color: #0275d8;
+  }
+
+  .nav-link:hover {
+    color: #d9534f;
+
+  }
+
+
+
+  .flex {
+    height: 110vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .card-btn {
+    color: #0275d8;
+  }
+
+  .card-btn:hover {
+    color: #d9534f;
+  }
+
+
+
+  i {
+    padding-top: 10px;
+  }
+
+  .testimonials-row {
+    width: 50%;
+  }
+
+
+
+
+
+
+
+
+  @media only screen and (min-width:1000px) and (max-width:1300px) {
+    .flex {
+      width: 70%;
+    }
+
+    .price-card {
+      width: 30%;
+    }
+
+    .testimonials-row {
+      width: 60%;
+    }
+
+  }
+
+  @media only screen and (min-width:800px) and (max-width:1000px) {
+    .flex {
+      width: 90%;
+    }
+
+    .price-card {
+      width: 45%;
+    }
+
+    .testimonials-row {
+      width: 90%;
+    }
+
+  }
+
+  @media only screen and (min-width:500px) and (max-width:800px) {
+    .flex {
+      width: 80%;
+    }
+
+    .price-card {
+      width: 80%;
+    }
+
+    .testimonials-row {
+      width: 95%;
+    }
+
+  }
+
+  @media only screen and (max-width:500px) {
+    .flex {
+      width: 100%;
+
+    }
+
+    .display-4 {
+      font-size: 22px;
+
+    }
+
+    .lead {
+      font-size: 15px;
+    }
+
+    .price-card {
+      width: 90%;
+
+    }
+
+    .testimonials-row {
+      width: 100%;
+      height: 20vh;
+      overflow: scroll;
+      align-items: start;
+
+
+
+    }
+
+    .testimonials-p {
+      font-size: 15px;
+
+    }
+
+
+  }
+</style>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid ">
+      <a class="navbar-brand fs-2 text-primary-emphasis px-4" href="#">"Bussiness<span
+          class="text-danger">Point"</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class=" ul navbar-nav ms-auto mb-2 mb-lg-0  fs-4 px-2">
+          <li class="nav-item px-1 ">
+            <a class="nav-link " aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item px-1 ">
+            <a class="nav-link" href="">About</a>
+          </li>
+          <li class="nav-item px-1 ">
+            <a class="nav-link" href="#plans">Plans</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div data-aos="zoom-in">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row flex ">
+          <div class="col-12 text-center">
+            <h1 class="display-4 text-white">Present your business in a whole new way </h1>
+            <p class="lead text-white">Quickly design and customize reposnive mobile-first sites with Bootstrap, the world's most
+              popular fromt-end open souce toolkit, best platform ever!</p>
+            <button class="btn btn-primary mx-1 my-1 ">Get Started</button>
+            <button class="btn btn-outline-secondary btn-lg mx-1 my-1">Learn More</button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container-fluid my-5">
+      <div data-aos="fade-up">
+        <div class="row d-flex justify-content-evenly align-items-center">
+          <div class="col-md-4 text-center pb-3">
+            <i class="fi fi-rr-browser text-primary display-1 "></i>
+            <h2>Fully Responsive</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nihil beatae, quam
+              incidunt nulla quo
+              deserunt voluptas facere maiores nam ab expedita doloribus quasi molestias non quia modi at ratione!</p>
+            <button class=" card-btn btn  btn-lg ">Call to action </button>
+
+
+          </div>
+          <div class="col-md-4 text-center pb-3">
+            <i class="fi fi-rr-time-twenty-four  text-primary display-1"></i>
+            <h2>24/7 Available</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nihil beatae, quam
+              incidunt nulla quo
+              deserunt voluptas facere maiores nam ab expedita doloribus quasi molestias non quia modi at ratione!</p>
+            <button class="card-btn btn  btn-lg">Call to action</button>
+
+          </div>
+
+
+          <div class="col-md-4 text-center pb-3">
+            <i class="fi fi-rr-house-building  text-primary display-1"></i>
+            <h2>High Sales</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nihil beatae, quam
+              incidunt nulla quo
+              deserunt voluptas facere maiores nam ab expedita doloribus quasi molestias non quia modi at ratione!</p>
+            <button class="card-btn btn  btn-lg">Call to action </button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <section id="plans">
+    <div data-aos="zoom-in-up">
+      <div class="container-fluid bg-light pb-5 ">
+
+        <div class="row">
+          <div class="col-12 text-center mt-5">
+            <h1><b>Pay as you grow</b></h1>
+            <p class="lead">With our no hassle pricing plans</p>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-evenly align-items-center">
+
+          <div class="col-md-3 bg-white my-3 shadow-lg rounded price-card  ">
+            <h4 class="mt-3 mx-2"><b>Free</b></h4>
+            <h1 class="display-1 mx-1"><b>$0</b><span class="fs-6"> / mo.</span></h1>
+            <div class=" d-flex  ">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4><b>1 users</b></h4>
+            </div>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>5gb storage</h4>
+            </div>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>unlimites public projects</h4>
+            </div>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>community access</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-cross-small mx-2 text-danger"></i>
+              <h4>unlimites public projects</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-cross-small mx-2 text-danger"></i>
+              <h4>dedicated supports</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-cross-small mx-2 text-danger"></i>
+              <h4>free linked domain</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-cross-small mx-2 text-danger"></i>
+              <h4>monthly status reports</h4>
+            </div>
+
+            <button class="btn btn-outline-primary fs-5  my-3 w-100 ">Choose plan</button>
+
+
+
+          </div>
+
+          <div class="col-md-3  bg-white my-3 shadow-lg rounded price-card">
+            <h4 class="mt-3 mx-2 "><b>Pro</b></h4>
+
+            <h1 class="display-1 mx-1 "><b>$9</b><span class="fs-6"> / mo.</span></h1>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4><b>5 users</b></h4>
+            </div>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>5gb storage</h4>
+            </div>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>unlimites public projects</h4>
+            </div>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>community access</h4>
+            </div>
+
+            <div class="d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>unlimites public projects</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>dedicated supports</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>free linked domain</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-cross-small mx-2 text-danger"></i>
+              <h4>monthly status reports</h4>
+            </div>
+            <button class="btn btn-outline-primary fs-5 active  my-3 w-100">Choose plan</button>
+          </div>
+
+          <div class="col-md-3 bg-white my-3 shadow-lg rounded price-card">
+            <h4 class="mt-3 mx-2"><b>Enterprise</b></h4>
+            <h1 class="display-1 mx-1"><b>$49</b><span class="fs-6"> / mo.</span></h1>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4><b>Unlimited users</b></h4>
+            </div>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>5gb storage</h4>
+            </div>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>unlimites public projects</h4>
+            </div>
+            <div class=" d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>community access</h4>
+            </div>
+
+            <div class="d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>unlimites public projects</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>dedicated supports</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4><b>unlimited</b> linked domain</h4>
+            </div>
+            <div class="d-flex">
+              <i class="fi fi-rr-check mx-2 text-primary"></i>
+              <h4>monthly status reports</h4>
+            </div>
+            <button class="btn btn-outline-primary fs-5 my-3 w-100 ">Choose plan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="testimonials">
+    <div class="container-fluid pb-5">
+      <div class="row">
+        <div data-aos="zoom-in-up">
+          <div class="col-12 mt-5 text-center ">
+            <h1><b>Customer testimonials</b></h1>
+            <p class="lead">Our customers love wroking with us</p>
+          </div>
+        </div>
+      </div>
+      <div data-aos="flip-up">
+        <div class="testimonials-card d-flex flex-column justify-content-evenly align-items-center">
+          <div class="row testimonials-row  border shadow rounded mt-4 ">
+            <div class="col-2 d-flex justify-content-evenly align-items-center   ">
+              <i class=" fi fi-rr-comment-quote display-4 text-primary p-2"></i>
+            </div>
+            <div class="col-10">
+              <p class="lead p-2 testimonials-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat
+                ratione neque, expedita cum beatae
+                in debitis veritatis ducimus fugiat pariatur odit corporis delectus cumque? Ratione accusantium
+                cupiditate
+                voluptatibus libero!</p>
+            </div>
+
+
+          </div>
+          <div class="row testimonials-row   border shadow rounded mt-5">
+            <div class="col-2 d-flex justify-content-evenly align-items-center ">
+              <i class=" fi fi-rr-comment-quote text-primary display-4 p-2"></i>
+            </div>
+            <div class="col-10">
+              <p class="lead p-2 testimonials-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                tempore, obcaecati dolorum harum
+                voluptas expedita odit minima vitae, nam rerum ullam a temporibus nemo est? Nihil commodi numquam aut
+                reprehenderit. Lorem ipsum dolor elit.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container-fluid bg-light pb-5">
+
+      <div class="row ">
+        <div class="col-12 text-center mt-5">
+          <i class="fi fi-rr-envelope-dot display-3 text-white bg-primary px-4 rounded shadow"></i>
+          <h1 class="mt-2"><b>Get in touch</b></h1>
+          <p class="lead">We'd love to hear from you</p>
+        </div>
+      </div>
+      <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-lg-6">
+            <form class="row ">
+              <div class="col-12">
+                <label for="inputtext4" class="form-label"></label>
+                <input type="text" class="form-control py-2 fs-5 shadow-sm" id="inputtext4" placeholder="Full name">
+              </div>
+              <div class="col-12">
+                <label for="inputEmail4" class="form-label"></label>
+                <input type="email" class="form-control py-2 fs-5 shadow-sm" id="inputEmail4" placeholder="Email address">
+              </div>
+              <div class="col-12">
+                <label for="inputPassword4" class="form-label"></label>
+                <input type="password" class="form-control py-2 fs-5 shadow-sm" id="inputPassword4"
+                  placeholder="Password">
+              </div>
+              <div class="col-12">
+                <label for="inputPassword4" class="form-label"></label>
+                <input type="text" class="form-control py-2 fs-5 shadow-sm" id="inputPassword4" placeholder="Password">
+              </div>
+              <div class="col-12">
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control fs-5 shadow-sm" id="exampleFormControlTextarea1" rows="5"
+                  placeholder="Message"></textarea>
+              </div>
+              <div data-aos="fade-up">
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary btn-lg my-3 shadow">Submit</button>
+                </div>
+              </div>
+             
+            </form>
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="aos.js"></script>
+</body>
+
+</html>
